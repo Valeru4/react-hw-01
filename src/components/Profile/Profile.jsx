@@ -1,5 +1,15 @@
 import user from 'data/user.json';
-
+import {
+  ContainerProfile,
+  DescriptionProfile,
+  Image,
+  TextName,
+  Text,
+  ListProfile,
+  ItemProfile,
+  ItemLabel,
+  ItemQuantity,
+} from './Profile.styled';
 export const Profile = ({
   username,
   tag,
@@ -8,28 +18,28 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <ContainerProfile>
+      <DescriptionProfile>
+        <Image src={avatar} alt="User avatar" />
+        <TextName>{username}</TextName>
+        <Text>{tag}</Text>
+        <Text>{location}</Text>
+      </DescriptionProfile>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <ListProfile>
+        <ItemProfile>
+          <ItemLabel>Followers</ItemLabel>
+          <ItemQuantity>{followers}</ItemQuantity>
+        </ItemProfile>
+        <ItemProfile>
+          <ItemLabel>Views</ItemLabel>
+          <ItemQuantity>{views}</ItemQuantity>
+        </ItemProfile>
+        <ItemProfile>
+          <ItemLabel>Likes</ItemLabel>
+          <ItemQuantity>{likes}</ItemQuantity>
+        </ItemProfile>
+      </ListProfile>
+    </ContainerProfile>
   );
 };

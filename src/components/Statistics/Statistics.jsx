@@ -1,20 +1,27 @@
-import data from 'data/statistic.json';
+import {
+  SectiionStatistics,
+  Title,
+  StatisticsList,
+  StatisticsItem,
+  LabelStatistics,
+  PercentageStatistics,
+} from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title && <h2>{title}</h2>}
+    <SectiionStatistics>
+      {title && <Title>{title}</Title>}
 
-      <ul className="stat-list">
+      <StatisticsList>
         {stats.map(({ id, label, percentage }) => {
           return (
-            <li className="item">
-              <span className="label">{label}</span>
-              <span className="percentage">{percentage}</span>
-            </li>
+            <StatisticsItem>
+              <LabelStatistics>{label}</LabelStatistics>
+              <PercentageStatistics>{percentage}</PercentageStatistics>
+            </StatisticsItem>
           );
         })}
-      </ul>
-    </section>
+      </StatisticsList>
+    </SectiionStatistics>
   );
 };
