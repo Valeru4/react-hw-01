@@ -1,4 +1,5 @@
-import user from 'data/user.json';
+import PropTypes from 'prop-types';
+
 import {
   ContainerProfile,
   DescriptionProfile,
@@ -42,4 +43,16 @@ export const Profile = ({
       </ListProfile>
     </ContainerProfile>
   );
+};
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  }),
 };

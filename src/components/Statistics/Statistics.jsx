@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import {
   SectiionStatistics,
   Title,
@@ -15,7 +17,7 @@ export const Statistics = ({ title, stats }) => {
       <StatisticsList>
         {stats.map(({ id, label, percentage }) => {
           return (
-            <StatisticsItem>
+            <StatisticsItem key={id}>
               <LabelStatistics>{label}</LabelStatistics>
               <PercentageStatistics>{percentage}</PercentageStatistics>
             </StatisticsItem>
@@ -24,4 +26,9 @@ export const Statistics = ({ title, stats }) => {
       </StatisticsList>
     </SectiionStatistics>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array,
 };
