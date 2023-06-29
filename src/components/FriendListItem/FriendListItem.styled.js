@@ -10,7 +10,7 @@ export const ItemOfFriends = styled.li`
 
 export const Status = styled.span`
   display: block;
-  background-color: red;
+  background-color: ${({ status }) => (status ? 'green' : 'red')};
   border-radius: 50%;
   width: 12px;
   height: 12px;

@@ -12,6 +12,9 @@ export const Th = styled.th`
   border-bottom: 1px solid #ddd;
   background-color: #808080;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
 `;
 
 export const Td = styled.td`
@@ -21,5 +24,5 @@ export const Td = styled.td`
   background-color: #f2f2f2;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
 `;

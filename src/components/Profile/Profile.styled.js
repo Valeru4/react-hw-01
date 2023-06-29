@@ -17,7 +17,6 @@ export const DescriptionProfile = styled.div`
   padding-right: 49px;
   padding-top: 30px;
   padding-bottom: 30px;
-
   border: 1px solid rgba(0, 0, 0, 0.1);
 `;
 
