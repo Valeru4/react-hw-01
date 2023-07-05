@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContainerProfile = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@ export const ContainerProfile = styled.div`
   background-color: #808080;
 `;
 
-export const DescriptionProfile = styled.div`
+export const Wrapper = styled.div`
   background-color: white;
   margin: auto;
   padding-left: 49px;
@@ -45,7 +45,7 @@ export const Text = styled.p`
   color: grey;
 `;
 
-export const ListProfile = styled.ul`
+export const List = styled.ul`
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -54,14 +54,14 @@ export const ListProfile = styled.ul`
   background-color: #d3d3d3;
 `;
 
-export const ItemProfile = styled.li`
+export const Item = styled.li`
   display: flex;
   flex-direction: column;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 `;
 
-export const ItemLabel = styled.span`
+export const Label = styled.span`
   font-family: 'Raleway', sans-serif;
   color: grey;
   font-weight: 400;
@@ -70,7 +70,7 @@ export const ItemLabel = styled.span`
   margin-bottom: 10px;
 `;
 
-export const ItemQuantity = styled.span`
+export const Quantity = styled.span`
   font-family: 'Raleway', sans-serif;
   color: black;
   font-weight: 800;

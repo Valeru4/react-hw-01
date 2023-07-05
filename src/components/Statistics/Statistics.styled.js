@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SectiionStatistics = styled.section`
+export const Section = styled.section`
   padding: 15px 5px;
   margin: auto;
   background-color: #d3d3d3;
@@ -15,7 +15,7 @@ export const Title = styled.h2`
   margin-bottom: 15px;
 `;
 
-export const StatisticsList = styled.ul`
+export const List = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -25,14 +25,14 @@ export const StatisticsList = styled.ul`
   background-color: #d3d3d3;
 `;
 
-export const StatisticsItem = styled.li`
+export const Item = styled.li`
   display: flex;
   flex-direction: column;
   padding: 19px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 `;
 
-export const LabelStatistics = styled.span`
+export const Label = styled.span`
   font-family: 'Raleway', sans-serif;
   color: grey;
   font-weight: 400;
@@ -41,7 +41,7 @@ export const LabelStatistics = styled.span`
   margin-bottom: 10px;
 `;
 
-export const PercentageStatistics = styled.span`
+export const Percentage = styled.span`
   font-family: 'Raleway', sans-serif;
   color: black;
   font-weight: 800;
